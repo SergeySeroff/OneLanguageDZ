@@ -1,13 +1,6 @@
-﻿int n;
-n = 8;
-
-if(n==5)
-{
-    Console.WriteLine("2, 4");
-}
-if(n==8)
-{
-    Console.WriteLine("2, 4, 6, 8");
-}
-
-// Вот как то так :)
+﻿Console.WriteLine("Введите число: ");
+int n = int.Parse(Console.ReadLine());
+    
+for (int i = 1; i <= n; i++)
+    if (i % 2 == 0)
+        Console.Write(i + ", ");
